@@ -9,11 +9,11 @@ body{
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .main{
     border: 2px solid black;
     height: 25vh;
-    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@ h1{
     color: #333;
 }
 button{
-    height: 30px;
+    height: 2rem;
     background-color: chocolate;
     color : white;
     font-weight: bold;
