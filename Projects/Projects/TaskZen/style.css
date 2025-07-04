@@ -1,0 +1,135 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("https://images.pexels.com/photos/7967622/pexels-photo-7967622.jpeg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  color: cyan;
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 4vw;
+}
+.top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1vh;
+}
+#task {
+  width: 100%;
+  outline: none;
+  height: 5vh;
+  font-size: large;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+#addTask {
+  background-color: rgb(235, 225, 139);
+  outline: none;
+  font-size: 15px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgb(255, 196, 0);
+  cursor: pointer;
+}
+main {
+  border: 2px solid black;
+  width: 40vw;
+  background-color: rgb(236, 228, 217);
+  border-radius: 13px;
+  overflow-wrap: break-word;
+}
+
+ul li {
+  padding: 12px 10px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  transform-origin: right center;
+  flex-wrap: nowrap;
+  white-space: normal;
+  word-break: break-word;
+}
+
+ul li:hover {
+  background-color: rgb(180, 180, 180);
+  transform: scale(1.1);
+}
+#emptyBox {
+  color: rgb(255, 0, 0);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 3px black;
+}
+.clear {
+  height: 2.5rem;
+  width: 5rem;
+  font-size: 1rem;
+  background-color: rgb(220, 218, 231);
+  border-radius: 10px;
+  margin-top: 1.5rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in;
+}
+
+.clear:hover {
+  transform: scale(1.1);
+  font-size: 1.2rem;
+}
+ul li button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: red;
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+
+.task-radio {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  accent-color: limegreen;
+}
+@media (max-width: 1000px) {
+  main {
+    width: 60vw;
+  }
+  h1 {
+    font-size: 6.5vw;
+  }
+  #task {
+    height: 8vh;
+    font-size: larger;
+  }
+  ul li {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
+@media (max-width: 400px) {
+  main {
+    width: 90vw;
+  }
+  h1 {
+    font-size: 15vw;
+  }
+  #task {
+    height: 8vh;
+    font-size: larger;
+  }
+  ul li {
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+}
