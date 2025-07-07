@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Personal Expense Tracker</h1>
+    </header>
+    <main>
+      <div class="creditCard">
+        <p class="TotalAmount">0</p>
+
+        <img src="CreditCardImage.png" alt="CreditCardImage" />
+      </div>
+      <div class="moneyManagement">
+        <div class="inputData">
+          <select name="transactionType" id="transactionType">
+            <option value="income">Income +</option>
+            <option value="expense">Expense -</option>
+          </select>
+          <input type="number" id="inputAmount" placeholder="Enter Amount" />
+          <input type="text" id="inputDescription" placeholder="Description" />
+          <div class="emptyAlert">Please fill in all fields properly</div>
+          <button>Add Money</button>
+        </div>
+        <div class="transcationList">
+          <ul></ul>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+body {
+  background-color: #47624f;
+}
+header {
+  background-color: #2b8328;
+  color: rgb(245, 245, 245);
+  text-shadow: 1px 1px 2px black;
+  height: 4vw;
+  text-align: center;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+main {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.creditCard {
+  position: relative;
+  width: 38vw;
+  display: inline-block;
+  margin-top: 5vw;
+}
+
+.creditCard img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.TotalAmount {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 13vw;
+  color: #62d61f;
+  font-size: 4vw;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+/*Input Data */
+.inputData {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  border-radius: 10px;
+}
+input {
+  border: 1px solid black;
+  background-color: lightgoldenrodyellow;
+  outline: none;
+  border-radius: 7px;
+  font-size: 30px;
+  width: 40vw;
+}
+#transactionType {
+  border: 1px solid black;
+  outline: none;
+  background-color: bisque;
+  border-radius: 7px;
+  font-size: 30px;
+  margin-bottom: 0.2em;
+  cursor: pointer;
+}
+/* See transaction list */
+.moneyManagement {
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #82b4b2;
+  border-radius: 1rem;
+  margin-top: 5vw;
+}
+.transcationList {
+  display: flex;
+  margin-top: 20px;
+}
+ul li {
+  font-size: 2rem;
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #9ffcdf;
+  transition: transform 0.2s ease;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: 400px;
+}
+ul li:hover {
+  transform: scale(1.2);
+}
+Button {
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background-color: #62d61f;
+  color: aliceblue;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+
+  font-weight: bold;
+  border: 1.5px solid black;
+}
+.emptyAlert {
+  font-size: 1.5rem;
+  color: red;
+  text-shadow: 1px 1px 0 black, 1px 1px 0 black, 1px 1px 0 black;
+  font-weight: bold;
+  display: none;
+}
+ul li span {
+  display: inline;
+}
+@media (max-width: 750px) {
+  .creditCard {
+    position: relative;
+    width: 50vw;
+    display: inline-block;
+  }
+  .TotalAmount {
+    top: 19vw;
+    font-size: 2rem;
+  }
+  header {
+    font-size: 13px;
+    height: 3vh;
+  }
+}
+@media (max-width: 550px) {
+  .creditCard {
+    position: relative;
+    width: 70vw;
+    display: inline-block;
+    margin-top: 3rem;
+  }
+  .TotalAmount {
+    top: 25vw;
+    font-size: 2rem;
+  }
+  input {
+    width: 80vw;
+  }
+
+  header {
+    font-size: 13px;
+    height: 3.5vh;
+  }
+  ul li {
+    width: 250px;
+  }
+}
